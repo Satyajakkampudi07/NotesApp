@@ -1,34 +1,46 @@
 
-# Notes APP
-This is java based android notes app which lets user to create quick notes. This App is built by implementing MVVM architecture. <br>
-Model — View — ViewModel (MVVM) is the industry-recognized software architecture pattern that overcomes all drawbacks of MVP and MVC design patterns. MVVM suggests separating the data presentation logic(Views or UI) from the core business logic part of the application. <br>
+This Android application is designed to provide users with a seamless note-taking experience, featuring Google authentication for secure access. Leveraging various Android components such as activities, fragments, SQLite, shared preferences, and RecyclerViews, the app ensures a smooth and organized user interface.
 
-### User can -
+**Features:**
 
-  * Add note
-  * Edit note
-  * Delete note
-  * Search note
- 
- Add Note | Edit Note | Delete Note | Search Note
------------- | ------------- | ------------- | -------------
-![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/79650580/142613895-d834e20d-75c7-4020-9a3f-5a356098827e.gif) | ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/79650580/142613503-0a824ade-913d-4c39-acc5-52862417b8ff.gif) | ![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/79650580/142614368-5fdc7880-c7b8-42cb-9f8e-41f32a3fab99.gif) | ![final](https://user-images.githubusercontent.com/79650580/146646653-b48bd451-cb66-4996-9c28-28fa95c00f92.gif)
+**Google Authentication:**
+   - Users are required to log in via Google authentication upon launching the app.
+   - The login screen is the initial point of entry for users who are not logged in.
+   
+**Note Display:**
+   - Upon successful login, the app displays all notes associated with the logged-in user.
+   - Notes are presented in their entirety, providing users with comprehensive information.
 
-### MVVM Architecture
+ **RecyclerView Integration:**
+   - Implements RecyclerView to efficiently display a list of notes.
+   - Enhances user experience through smooth scrolling and optimized note presentation.
 
-<img  src="https://miro.medium.com/max/875/1*itYWsxQTfq7xTuvIMrVhYg.png"/>
+**Add New Note:**
+   - Includes a user-friendly button for adding new notes.
+   - Simplifies the process of creating and saving new entries.
 
- * **Entity:** Annotated class that describes a database table when working with Room.
+ **Note Editing:**
+   - Allows users to update and modify existing notes.
+   - Ensures flexibility and adaptability in managing information.
 
- * **SQLite database:** On device storage. The Room persistence library creates and maintains this database for you.
+**Note Deletion:**
+   - Provides functionality for users to delete unwanted notes.
+   - Enhances user control over their data.
 
- * **DAO:** Data access object. A mapping of SQL queries to functions. When you use a DAO, you call the methods, and Room takes care of the rest.
+**Technology Stack**
+- **Google Login API:** Enables secure and convenient user authentication.
+- **SQLite Database:** Stores user information and notes, ensuring data persistence.
+- **Activities & Fragments:** Utilized for managing different screens and optimizing user flow.
+- **RecyclerView:** Facilitates the efficient display of notes, contributing to a seamless user interface.
 
- * **Room database:** Simplifies database work and serves as an access point to the underlying SQLite database (hides SQLiteOpenHelper). The Room database uses the DAO to issue queries to the SQLite database.
 
- * **Repository:** Used to manage multiple data sources.
 
- * **ViewModel:** Acts as a communication center between the Repository (data) and the UI. The UI no longer needs to worry about the origin of the data. ViewModel instances survive Activity/Fragment recreation.
+**External Libraries and Resources**
+Google Login API:
+Integrated to enable secure and reliable user authentication through Google accounts.
+YouTube Tutorials:
+Leveraged various YouTube tutorials to gain insights into implementing Google authentication, working with SQLite databases, and utilizing Recyclerviews for efficient data display.
 
- * **LiveData:** A data holder class that can be observed. Always holds/caches the latest version of data, and notifies its observers when data has changed. LiveData is lifecycle aware. UI components just observe relevant data and don't stop or resume observation. LiveData automatically manages all of this since it's aware of the relevant lifecycle status changes while observing.
- 
+
+For any queries or issues, feel free to contact the maintainers or open an issue in the repository.
+Happy Note-Taking with our Google-Authenticated Notes App!
