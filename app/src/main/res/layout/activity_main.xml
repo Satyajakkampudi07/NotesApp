@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="135dp"
+        android:layout_height="88dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp"
+        android:layout_marginBottom="88dp"
+        android:text="Sign In" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logointern"
+        android:layout_alignBottom="@+id/logointern"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="286dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="36dp"
+        android:text="Notes App"
+        android:textSize="28dp" />
+
+    <ImageView
+        android:id="@+id/logointern"
+        android:layout_width="354dp"
+        android:layout_height="368dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="315dp"
+        android:src="@drawable/img" />
+
+    <ImageView
+        android:id="@+id/google_btn"
+        android:layout_width="43dp"
+        android:layout_height="57dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="609dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="65dp"
+        android:layout_toStartOf="@+id/loginbtn"
+        android:src="@drawable/google" />
+
+
+</RelativeLayout>

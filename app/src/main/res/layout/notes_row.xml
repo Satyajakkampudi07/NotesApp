@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/notes_row"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notesTitle"
+        android:text="Notes Title"
+        android:layout_alignParentStart="true"
+
+        android:paddingStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"
+        android:paddingEnd="10dp"
+
+        android:paddingVertical="5dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notesText"
+        android:text="Notes Text"
+
+        android:textSize="18sp"
+        android:layout_below="@+id/notesTitle"
+        android:paddingStart="23dp"
+        android:paddingBottom="5dp"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:src="@drawable/ic_baseline_close_24"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        />
+
+</RelativeLayout>
