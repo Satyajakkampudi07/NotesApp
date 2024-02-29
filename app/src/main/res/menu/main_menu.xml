@@ -11,5 +11,11 @@
                 android:icon="@drawable/ic_baseline_delete_24"
                 app:showAsAction="ifRoom"
                 />
+    <item
+        android:id="@+id/button_second"
+        android:title="Delete Note"
+        android:icon="@drawable/baseline_account_circle_24"
+        app:showAsAction="ifRoom"
+        />
 
         </menu>

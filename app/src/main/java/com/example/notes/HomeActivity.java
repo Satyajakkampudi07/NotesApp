@@ -194,6 +194,12 @@ public class HomeActivity extends AppCompatActivity {
                     alertDialog.show();
                     return true;
 
+                case R.id.button_second:
+                    // Navigate to SecondActivity
+                    Intent intent = new Intent(HomeActivity.this, SecondActivity.class);
+                    startActivity(intent);
+                    return true;
+
 
                 default : return super.onOptionsItemSelected(item);
 
